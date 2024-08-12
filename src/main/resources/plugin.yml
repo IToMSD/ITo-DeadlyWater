@@ -1,0 +1,22 @@
+name: ITo-DeadlyWater
+version: '1.0'
+main: pl.polsatgranie.itomsd.deadlyWater.DeadlyWater
+api-version: '1.13'
+load: STARTUP
+authors: [ PolsatGraniePL ]
+description: IToMSD plugin
+website: https://itomsd.com/
+depend: [WorldGuard]
+permissions:
+  itomsd.deadlywater.bypass:
+    description: "Water does not damage this player and does not kill him."
+    default: op
+  itomsd.deadlywater.reload:
+    description: "Allows you to reload the DeadlyWater configuration"
+    default: op
+commands:
+  dwreload:
+    description: "Reload the DeadlyWater config"
+    usage: "/dwreload"
+    aliases:
+      - deadlywaterreload
